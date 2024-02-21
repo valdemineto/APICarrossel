@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>API Carrossel</title>
+	<link rel="stylesheet" href="APICarrossel.css">
+</head>
+
+<body>
+	<div class="carossel">
+		<!-- Slides -->
+
+			<input type="radio" name="radio" id="radio1" class="navigatorManual">
+			<input type="radio" name="radio" id="radio2" class="navigatorManual">
+			<input type="radio" name="radio" id="radio3" class="navigatorManual">
+			<input type="radio" name="radio" id="radio4" class="navigatorManual">
+
+
+			<img src="/Javascript.svg" alt="" class="img">
+			<img src="/Liderança.svg" alt="" class="img">
+			<img src="/Nodejs.svg" alt="" class="img">
+			<img src="/Portugol.svg" alt="" class="img">
+			<img src="/Construct2.svg" alt="" class="img">
+			<img src="/Guia Front-end.svg" alt="" class="img">
+
+
+		<div class="label"> 
+			<label for="radio1" class="radioBtn1 btn" onclick="resetCont(1)"></label>
+			<label for="radio2" class="radioBtn2 btn" onclick="resetCont(2)"></label>
+			<label for="radio3" class="radioBtn3 btn" onclick="resetCont(3)"></label>
+			<label for="radio4" class="radioBtn4 btn" onclick="resetCont(4)"></label>
+		</div>
+		<div class="btns">
+			<button class="anterior" onclick="anterior()">Anterior</button>
+			<button class="proximo" onclick="proximo()">Próxima</button>
+		</div>
+
+	</div>
+	<script src="APICarrossel.js"></script>
+</body>
+
+</html>
