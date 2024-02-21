@@ -19,7 +19,7 @@ body {
 	width:50%;
 }
 }
-@media screen and (max-width:412px){
+@media screen and (max-width:430px){
 	:root{
 		--movimento:-110%;
 	}
@@ -28,6 +28,9 @@ body {
 	}
 	.carossel{
 		width: 360px;
+	}
+	.btns{
+	display:none;
 	}
 
 }
