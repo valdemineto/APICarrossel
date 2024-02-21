@@ -6,6 +6,9 @@ body {
 :root{
 	--movimento:-105%;
 }
+.carossel {
+	
+}
 
 .carossel {
 	display: grid;
@@ -14,24 +17,25 @@ body {
 	overflow: hidden;
 	width: 60%;
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width: 1024px) {
 .carossel{
-	width:50%;
+	width: 50%;
 }
 }
-@media screen and (max-width:430px){
+@media (max-width:430px){
 	:root{
 		--movimento:-110%;
 	}
 	.img{
 		width: 110px;
+		
 	}
 	.carossel{
 		width: 360px;
-		overflow-x:scroll;
+		overflow-x: scroll;
 	}
 	.btns{
-	display:none;
+		display: none;
 	}
 
 }
@@ -43,9 +47,13 @@ body {
 	position: relative;
 	margin-top: 10px;
 }
+.label{
+	display: none;
+}
 
-.label {
-	display: flex;
+@media (min-width:1024px) {
+	.label {
+	display: flex !important;
 	gap: 10px;
 	grid-column: span 3;
 	justify-content: center;
@@ -58,12 +66,10 @@ body {
 	height: 10px;
 	margin-bottom: 10px;
 }
-
-.btn:hover {
+	.btn:hover {
 	background-color: black;
 }
-
-#radio1:checked~.label>.radioBtn1 {
+	#radio1:checked~.label>.radioBtn1 {
 	background-color: black;
 }
 
@@ -98,6 +104,8 @@ body {
 	transition: 1s;
 	margin-left: calc(var(--movimento) * 3);
 }
+}
+
 .btns{
 	position: absolute;
 	top: 25%;
