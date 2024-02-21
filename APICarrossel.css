@@ -6,15 +6,18 @@ body {
 :root{
 	--movimento:-105%;
 }
-.carossel {
-	width: 50%;
-}
 
 .carossel {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	gap: 10px;
 	overflow: hidden;
+	width: 60%;
+}
+@media (max-width:412px){
+.carossel{
+	width:50%;
+}
 }
 @media (max-width:412px){
 	:root{
