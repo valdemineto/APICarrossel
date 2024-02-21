@@ -28,6 +28,7 @@ body {
 	}
 	.carossel{
 		width: 360px;
+		overflow-x:scroll;
 	}
 	.btns{
 	display:none;
